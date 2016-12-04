@@ -31,7 +31,7 @@
 @endif
         <div class="login-box-body">
         <p class="login-box-msg"> {{ trans('adminlte_lang::message.siginsession') }} </p>
-        <form action="{{ url('/login') }}" method="post">
+        <form action="{{ route('loguser') }}" method="POST">
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
             <div class="form-group has-feedback">
                 <input type="email" class="form-control" placeholder="{{ trans('adminlte_lang::message.email') }}" name="email"/>

@@ -17,3 +17,13 @@ Route::get('/', function () {
 
 
 Route::resource('/home', 'HomeController');
+
+Route::post('login', [
+	'uses' => 'UserController@login',
+	'as' => 'loguser'
+]);
+
+Route::post('register', [
+	'uses' => 'UserController@register',
+	'as' => 'reguser'
+]);
