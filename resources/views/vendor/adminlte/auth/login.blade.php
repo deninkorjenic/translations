@@ -22,7 +22,13 @@
                 </ul>
             </div>
         @endif
-
+@if (isset($login_message))
+<div class="alert alert-danger">
+    <ul>
+        <li>{{ $login_message }}</li>
+    </ul>
+</div>
+@endif
         <div class="login-box-body">
         <p class="login-box-msg"> {{ trans('adminlte_lang::message.siginsession') }} </p>
         <form action="{{ url('/login') }}" method="post">

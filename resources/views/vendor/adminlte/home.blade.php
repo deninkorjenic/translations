@@ -6,6 +6,7 @@
 
 
 @section('main-content')
+{{ @var_dump($data) }}
 	<div class="container-fluid spark-screen">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
